@@ -1,6 +1,6 @@
 #Automatic Codon Chart
 #Author: Carter Turnbaugh
-#Last Modified: 5/14/2015
+#Last Modified: 5/25/2015
 
 #Usage: python autocodon.py
 #Modify the file to change the DNA
@@ -30,158 +30,13 @@ print codons
 
 amino_acids = ""
 
+codontoaa = {'UUU':'phe' , 'UUC':'phe' , 'UUA':'leu' , 'UUG':'leu' , 'UCU':'ser' , 'UCC':'ser' , 'UCA':'ser' , 'UCG':'ser' , 'UAU':'tyr' , 'UAC':'tyr' , 'UAA':'stop' , 'UAG':'stop' , 'UGU':'cys' , 'UGC':'cys' , 'UGA':'stop' , 'UGG':'trp' , 'CUU':'leu' , 'CUC':'leu' , 'CUA':'leu' , 'CUG':'leu' , 'CCU':'pro' , 'CCC':'pro' , 'CCA':'pro' , 'CCG':'pro' , 'CAU':'his' , 'CAC':'his' , 'CAA':'gin' , 'CAG':'gin' , 'CGU':'arg' , 'CGC':'arg' , 'CGA':'arg' , 'CGG':'arg' , 'AUU':'ile' , 'AUC':'ile' , 'AUA':'ile' , 'AUG':'met' , 'ACU':'thr' , 'ACC':'thr' , 'ACA':'thr' , 'ACG':'thr' , 'AAU':'asn' , 'AAC':'asn' , 'AAA':'lys' , 'AAG':'lys' , 'AGU':'ser' , 'AGC':'ser' , 'AGA':'arg' , 'AGG':'arg' , 'GUU':'val' , 'GUC':'val' , 'GUA':'val' , 'GUG':'val' , 'GCU':'ala' , 'GCC':'ala' , 'GCA':'ala' , 'GCG':'ala' , 'GAU':'asp' , 'GAC':'asp' , 'GAG':'glu' , 'GAA':'glu' , 'GGU':'gly' , 'GGC':'gly' , 'GGG':'gly' , 'GGA':'gly'}
+
 i = 0
 length = len(codons)
 while i < length:
 	
-	#First Letter U
-	#Second Letter U
-	if codons[i] == "UUU":
-		amino_acids += "phe "
-	elif codons[i] == "UUC":
-		amino_acids += "phe "
-	elif codons[i] == "UUA":
-		amino_acids += "leu "
-	elif codons[i] == "UUG":
-		amino_acids += "leu "
-	#Second Letter C
-	elif codons[i] == "UCU":
-		amino_acids += "ser "
-	elif codons[i] == "UCC":
-		amino_acids += "ser "
-	elif codons[i] == "UCA":
-		amino_acids += "ser "
-	elif codons[i] == "UCG":
-		amino_acids += "ser "
-	#Second Letter A
-	elif codons[i] == "UAU":
-		amino_acids += "tyr "
-	elif codons[i] == "UAC":
-		amino_acids += "tyr "
-	elif codons[i] == "UAA":
-		amino_acids += "stop"
-	elif codons[i] == "UAG":
-		amino_acids += "stop"
-	#Second Letter G
-	elif codons[i] == "UGU":
-		amino_acids += "cys "
-	elif codons[i] == "UGC":
-		amino_acids += "cys "
-	elif codons[i] == "UGA":
-		amino_acids += "stop"
-	elif codons[i] == "UGG":
-		amino_acids += "trp "
-	#First Letter C
-	#Second Letter U
-	elif codons[i] == "CUU":
-		amino_acids += "leu "
-	elif codons[i] == "CUC":
-		amino_acids += "leu "
-	elif codons[i] == "CUA":
-		amino_acids += "leu "
-	elif codons[i] == "CUG":
-		amino_acids += "leu "
-	#Second Letter C
-	elif codons[i] == "CCU":
-		amino_acids += "pro "
-	elif codons[i] == "CCC":
-		amino_acids += "pro "
-	elif codons[i] == "CCA":
-		amino_acids += "pro "
-	elif codons[i] == "CCG":
-		amino_acids += "pro "
-	#Second Letter A
-	elif codons[i] == "CAU":
-		amino_acids += "his "
-	elif codons[i] == "CAC":
-		amino_acids += "his "
-	elif codons[i] == "CAA":
-		amino_acids += "gin "
-	elif codons[i] == "CAG":
-		amino_acids += "gin "
-	#Second Letter G
-	elif codons[i] == "CGU":
-		amino_acids += "arg "
-	elif codons[i] == "CGC":
-		amino_acids += "arg "
-	elif codons[i] == "CGA":
-		amino_acids += "arg "
-	elif codons[i] == "CGG":
-		amino_acids += "arg "
-	#First Letter A
-	#Second Letter U
-	elif codons[i] == "AUU":
-		amino_acids += "ile "
-	elif codons[i] == "AUC":
-		amino_acids += "ile "
-	elif codons[i] == "AUA":
-		amino_acids += "ile "
-	elif codons[i] == "AUG":
-		amino_acids += "met "
-	#Second Letter C
-	elif codons[i] == "ACU":
-		amino_acids += "thr "
-	elif codons[i] == "ACC":
-		amino_acids += "thr "
-	elif codons[i] == "ACA":
-		amino_acids += "thr "
-	elif codons[i] == "ACG":
-		amino_acids += "thr "
-	#Second Letter A
-	elif codons[i] == "AAU":
-		amino_acids += "asn "
-	elif codons[i] == "AAC":
-		amino_acids += "asn "
-	elif codons[i] == "AAA":
-		amino_acids += "lys "
-	elif codons[i] == "AAG":
-		amino_acids += "lys "
-	#Second Letter G
-	elif codons[i] == "AGU":
-		amino_acids += "ser "
-	elif codons[i] == "AGC":
-		amino_acids += "ser "
-	elif codons[i] == "AGA":
-		amino_acids += "arg "
-	elif codons[i] == "AGG":
-		amino_acids += "arg "
-	#First Letter G
-	#Second Letter U
-	elif codons[i] == "GUU":
-		amino_acids += "val "
-	elif codons[i] == "GUC":
-		amino_acids += "val "
-	elif codons[i] == "GUA":
-		amino_acids += "val "
-	elif codons[i] == "GUG":
-		amino_acids += "val "
-	#Second Letter C
-	elif codons[i] == "GCU":
-		amino_acids += "ala "
-	elif codons[i] == "GCC":
-		amino_acids += "ala "
-	elif codons[i] == "GCA":
-		amino_acids += "ala "
-	elif codons[i] == "GCG":
-		amino_acids += "ala "
-	#Second Letter A
-	elif codons[i] == "GAU":
-		amino_acids += "asp "
-	elif codons[i] == "GAC":
-		amino_acids += "asp "
-	elif codons[i] == "GAG":
-		amino_acids += "glu "
-	elif codons[i] == "GAA":
-		amino_acids += "glu "
-	#Second Letter G
-	elif codons[i] == "GG":
-		amino_acids += "gly "
-	elif codons[i] == "GG":
-		amino_acids += "gly "
-	elif codons[i] == "GG":
-		amino_acids += "gly "
-	elif codons[i] == "GG":
-		amino_acids += "gly "
+	amino_acids += codontoaa[codons[i]] + " "
 		
 	i += 1
 	
