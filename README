@@ -5,3 +5,5 @@ autocodonchart is a basic tool to generate a string of amino acid names from a s
 Use with caution, the comparison code has not been checked.
 
 Language: Python 2.7
+
+A web version is available at http://73.162.155.107/codon.php
