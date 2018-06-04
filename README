@@ -1,3 +1,6 @@
+THIS REPOSITORY IS DEPRECATED, AND WILL NO LONGER BE UPDATED.
+The newest version can be found at https://bitbucket.org/carterturn/autocodonchart
+
 # autocodonchart
 
 autocodonchart is a basic tool to generate a string of amino acid names from a string of nucleotide characters.
@@ -6,4 +9,4 @@ Use with caution, the comparison code has not been checked.
 
 Language: Python 2.7
 
-A web version is available at http://tercatech.com/index.php?section=Tools&content=Auto+Codon+Chart
+A web version is available at https://carterturn.com/h/CT%20Software/Auto%20Codon%20Chart
